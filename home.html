@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+</head>
+<body >
+    <div class="calculator-digits" > 
+        <div class="out-put" id="output">
+            <div previous-output class="previous-output" ></div>
+            <div current-output class="current-output"></div>
+        </div>
+        <div class="box-one" style="display:inline-block; margin-top:10px;">
+            <button  button-delete-all  style=" margin-top:2px;">AC</button>
+            <button  button-operate  style=" margin-top:2px;">+/-</button>
+            <button  button-operate style=" margin-top:2px;">%</button>
+            <button  button-operate  style=" margin-top:2px;">/</button>
+            <button  button-number style=" margin-top:2px;">7</button>
+            <button  button-number style=" margin-top:2px;">8</button>
+            <button  button-number style=" margin-top:2px;">9</button>
+            <button button-operate style=" margin-top:2px;">*</button>   
+            <button  button-number style=" margin-top:2px;">4</button>
+            <button  button-number style=" margin-top:2px;">5</button>
+            <button  button-number style=" margin-top:2px;">6</button>
+            <button button-operate  style=" margin-top:2px;">-</button> 
+            <button  button-number style=" margin-top:2px;">1</button>
+            <button  button-number style=" margin-top:2px;">2</button>
+            <button  button-number style=" margin-top:2px;">3</button>
+            <button  button-operate style=" margin-top:2px;">+</button>  
+            <button  button-number style=" margin-top:2px;">0</button>
+            <button  button-number style=" margin-top:2px;">.</button>
+            <button  button-operate-equals style=" margin-top:2px;">=</button>
+            <button  button-delete style=" margin-top:2px;">Del</button>   
+        </div>
+        <script src="index.js"></script>
+    </div>
+    
+</body>
+</html>
+
+<style>
+    .calculator-digits{
+        display:grid;
+        margin-left:400px;
+        margin-top:50px;
+        border: 2px solid green;
+        border-radius:10px 20px;
+        box-shadow:10px 20px black;
+        width: 200px;
+        text-align:center;
+        padding-bottom:10px;
+
+    }
+
+    .out-put{
+        margin-top:50px;
+    }
+
+
+    button{
+        text-decoration:none;
+        width:40px;
+        height:40px;
+        border:2px solid black;
+        border-radius:10px;
+        cursor:pointer;
+    }
+
+    button:hover{
+        color:green;
+        font-size:30px;
+        width:60px;
+        height:40px;
+    }
+    
+ 
+</style>
