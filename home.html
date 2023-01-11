@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Online Calculator</title>
 </head>
 <body >
@@ -13,7 +13,7 @@
             <div class="navbar-header">
                 <a href="" class="pull-left visible-md visible-lg"></a>
             </div>
-            <div class="navbar-brand">
+            <div id="brand" class="navbar-brand">
                 <h1> Calculator</h1>
                 <img class="logo-img" src="">
             </div>
@@ -24,10 +24,10 @@
                 <span class="icon-bar"></span>
             </a>
             <div id="collaspable-nav" class="collaspe navbar-collaspe">
-                <ul id="nav-list" class="nav navbar-nav navbar-right">
-                    <li class="nav-link-button">home</li>
-                    <li class="nav-link-button">Service</li>
-                    <li class="nav-link-button">Contact</li>
+                <ul id="nav-list" class="nav navbar-nav navbar-right row">
+                    <li class="nav-link-button"><a href="">home</a></li>
+                    <li class="nav-link-button"><a href="">Service</a></li>
+                    <li class="nav-link-button"><a href="">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -66,6 +66,35 @@
 </html>
 
 <style>
+
+    #header-nav{
+        height:15vh;
+    }
+
+    #brand{
+        color:black;
+
+    }
+
+#collaspable-nav{
+    margin-top:2%;
+    text-align:center;
+    margin-right:5%;
+    
+}
+
+#collaspable-nav li a{
+    padding-left:3%;
+    margin-left:2%;
+    display:flex;
+    text-decoration:none; 
+
+}
+
+#collaspable-nav li a:hover{
+    color:blue;
+}
+
     .calculator-digits{
         display:grid;
         margin-left:400px;
